@@ -28,21 +28,19 @@ h2{
 
 .p1{
   font-size: 1rem;
-  margin-bottom: 1rem;
   font-family: "Times New Romans",Serif;
   color: #000000;
 }
 
 .p2{
   font-size: 1rem;
-  margin-bottom: 1rem;
   font-family: "Times New Romans",Serif;
   color: #ffffff;
 }
 
 .DarkerSection {
   background-color: #ae9cd7;
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +50,7 @@ h2{
   width: 100%;
 }
 
-.ProfileSection{
+.LighterSection{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +59,7 @@ h2{
   padding: 3rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 80vh;
+  min-height: 90vh;
   text-align: center
 }
 
@@ -88,13 +86,13 @@ h2{
 }
 
 .oval-bg-dark {
-  background-color: #ae9cd7; /* or whatever color you want */
-  padding: 0.6rem 1.5rem; /* vertical horizontal padding */
-  border-radius: 50px; /* creates the oval shape */
+  background-color: #ae9cd7; 
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
   border-color: #a583d5;
   border-width: 2px;
   border-style: solid;
-  display: inline-block; /* makes background fit the text */
+  display: inline-block; 
 }
 
 .oval-bg-light {
@@ -109,23 +107,35 @@ h2{
 
 .project-grid{
   display: grid;
-  grid-template-columns:2fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
-  max-width: 90%;
+  max-width: 1200px;
   margin: 0rem auto;
+  width:100%;
 }
 
 .project-card{
-  background-color:#dbc0f1; 
+  background-color: #dbc0f1;
   padding: 2rem;
-  border-radius: 20px; 
-  border-width:3px;
-  border-color:#a583d5;
-  border-style:solid;
-  background-size: auto auto;
-  min-height: 200px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  border-radius: 20px;
+  border: 3px solid #a583d5;
+  height: 300px;
 
+  display: flex;         
+  flex-direction: column;
+  justify-content: flex-start;
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.AppButtons{
+  font-size:'48px';
+  color:#ffffff;
+  cursor:"pointer";
+  display:'inline-block';
+  transition:'color 0.3s';
+  margin-left:1rem;
+  margin-right:1rem;
 
 }
