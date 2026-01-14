@@ -1,12 +1,27 @@
 import './App.css';
+import {useState}from 'react'
+import {useRef} from 'react'
 import { FaEnvelope, FaGithub, FaLinkedin , FaItchIo} from "react-icons/fa";
-//import files
+//import Assets files
 import Headshot from './assets/Professional_Headshot_Yusong_Liang_croped.jpeg';
 function FrontPage() {
+  function scrollToContact(){
+    const contactSection=document.getElementById('contact-section');
+    if(contactSection){
+      contactSection.scrollIntoView({behavior:'smooth'});
+    }
+  }
   return (
       <div className="DarkerSection">
         <h1>Yusong Liang</h1>
-        <h2>Game developer | Web Developer</h2>
+        <h2 style={{color:'#ffffff'}}>XXXX|XXXX</h2>
+        <button 
+          className="contact-button" 
+          style={{marginTop:'2rem', fontSize: '18px', color:'#ffffff', fontFamily: '"Times New Romans", Serif' }}
+          onClick={scrollToContact}
+        >
+          Contact Me
+        </button>
       </div>
   )
 }
@@ -14,7 +29,7 @@ function FrontPage() {
 function Profile(){
   return(  
     <div className="LighterSection">
-      <h2 className="oval-bg-dark">About Me</h2>
+      <h2 className="oval-bg" style={{color:'#8d6700'}}>About Me</h2>
       <img className="profileImage" src={Headshot} alt="Headshot" />
       <p className="p1">
         My name is Yusong Liang,
@@ -34,7 +49,7 @@ function Projects(){
   ]
   return(
     <div className= "DarkerSection">
-      <h2 className="oval-bg-light">Previous Projects</h2>
+      <h2 className="oval-bg" style={{color:'#8d6700'}}>Previous Projects</h2>
       <div className="project-grid">
         {ProjectList.map((project)=>(
           <div 
@@ -53,8 +68,8 @@ function Projects(){
 
 function Contact(){
   return(
-    <div className="LighterSection">
-      <h2 className="oval-bg-dark">Contact Me</h2>
+    <div className="LighterSection" id="contact-section">
+      <h2 className="oval-bg" style ={{color: '#8d6700'}}>Contact Me</h2>
         <p className="p1">Please feel free to contact me at any time. I look forward to working with you! </p>
       <div>
         <a 
@@ -93,15 +108,17 @@ function Contact(){
       </div>
     </div>
   );
-
 }
+
 function App() {
   return (
     <>
       <FrontPage />
       <Profile />
       <Projects />
-      <Contact/>
+      <div id="contact-section">
+        <Contact/>
+      </div>
 
     </>
   );

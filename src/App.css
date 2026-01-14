@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #dbc0f1;
+  /*background-color: #dbc0f1;*/
+  background-color: #B48E92;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,7 +24,6 @@ h2{
   margin-bottom: 1rem;
   font-family: 'Batang', 'Noto Serif KR', 'Georgia', serif;
   font-weight: 100;
-  color: #ffffff;
 }
 
 .p1{
@@ -39,7 +39,8 @@ h2{
 }
 
 .DarkerSection {
-  background-color: #ae9cd7;
+  /*background-color: #ae9cd7;*/
+  background-color: #533B4D;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -56,7 +57,7 @@ h2{
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 3rem 2rem;
+  padding: 1rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   min-height: 90vh;
@@ -85,25 +86,32 @@ h2{
   margin-top: 1rem;
 }
 
-.oval-bg-dark {
-  background-color: #ae9cd7; 
+.oval-bg {
+  background-color: #FAEDCA; 
   padding: 0.6rem 1.5rem;
   border-radius: 50px;
-  border-color: #a583d5;
+  border-color: #d4bd7b;
   border-width: 2px;
   border-style: solid;
   display: inline-block; 
 }
 
-.oval-bg-light {
-  background-color: #dbc0f1; 
-  padding: 0.6rem 1.5rem; 
-  border-radius: 50px; 
-  display: inline-block; 
+.contact-button{
+  background-color: #d7ba89; 
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  border-color: #b09345;
   border-width: 2px;
-  border-color: #a583d5;
   border-style: solid;
+  display: inline-block; 
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
+
+.contact-button:hover {
+  transform:scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 
 .project-grid{
   display: grid;
@@ -115,10 +123,10 @@ h2{
 }
 
 .project-card{
-  background-color: #dbc0f1;
+  background-color: #FAEDCA;
   padding: 2rem;
   border-radius: 20px;
-  border: 3px solid #a583d5;
+  border: 3px solid #b09345;
   height: 300px;
 
   display: flex;         
@@ -137,5 +145,13 @@ h2{
   transition:'color 0.3s';
   margin-left:1rem;
   margin-right:1rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border-radius:30%;
+  padding:0.3rem;
+}
+
+.AppButtons:hover{
+  transform:scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
 }
