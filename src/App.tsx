@@ -55,12 +55,14 @@ function Contact(){
   return(
     <div className="LighterSection">
       <h2 className="oval-bg-dark">Contact Me</h2>
-      <a href="mailto:yl23bd@fsu.edu"
-      className="oval-bg-dark" 
-      >
-        <p className="p2">Email Me!</p>
-      </a>
+        <p className="p1">Please feel free to contact me at any time. I look forward to working with you! </p>
       <div>
+        <a 
+          href="mailto:yl23bd@fsu.edu"
+          className="AppButtons"
+        >
+          {FaEnvelope ({size:48})}
+        </a>
         <a 
           href="https://github.com/yusongggg17"
           target="_blank"
