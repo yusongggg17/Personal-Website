@@ -1,9 +1,15 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Project1 from './project1';
+import Project2 from './project2';
+import Project3 from './project3';
+import Project4 from './project4';
 import {useState}from 'react'
 import {useRef} from 'react'
 import { FaEnvelope, FaGithub, FaLinkedin , FaItchIo} from "react-icons/fa";
 //import Assets files
 import Headshot from './assets/Professional_Headshot_Yusong_Liang_croped.jpeg';
+
 function FrontPage() {
   function scrollToContact(){
     const contactSection=document.getElementById('contact-section');
@@ -23,7 +29,7 @@ function FrontPage() {
           Contact Me
         </button>
       </div>
-  )
+  );
 }
 
 function Profile(){
@@ -42,10 +48,10 @@ function Profile(){
 
 function Projects(){
   const ProjectList=[
-    {id:1,title:"Project 1", description:"1",link:"/project1"},
-    {id:2,title:"Project 2", description:"2",link:"/project2"},
-    {id:3,title:"Project 3", description:"3",link:"/project3"},
-    {id:4,title:"Project 4", description:"4",link:"/project4"}
+    {id:1,title:"Project 1", description:"1",link:"/Project1"},
+    {id:2,title:"Project 2", description:"2",link:"/Project2"},
+    {id:3,title:"Project 3", description:"3",link:"/Project3"},
+    {id:4,title:"Project 4", description:"4",link:"/Project4"}
   ]
   return(
     <div className= "DarkerSection">
@@ -112,15 +118,24 @@ function Contact(){
 
 function App() {
   return (
-    <>
-      <FrontPage />
-      <Profile />
-      <Projects />
-      <div id="contact-section">
-        <Contact/>
-      </div>
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <FrontPage />
+            <Profile />
+            <Projects />
+            <div id="contact-section">
+              <Contact/>
+            </div>
+          </>
+        }/>
+        <Route path="/project1" element={<Project1 />}/>
+        <Route path="/project2" element={<Project2 />}/>
+        <Route path="/project3" element={<Project3 />}/>
+        <Route path="/project4" element={<Project4 />}/>
+        </Routes>
+      </BrowserRouter>
   );
 }
 
