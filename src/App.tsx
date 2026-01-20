@@ -20,7 +20,7 @@ function FrontPage() {
   return (
       <div className="DarkerSection">
         <h1>Yusong Liang</h1>
-        <h2 style={{color:'#ffffff'}}>XXXX|XXXX</h2>
+        <h2 style={{color:'#ffffff'}}> Game Developer | Research Assistant </h2>
         <button 
           className="contact-button" 
           style={{marginTop:'2rem', fontSize: '18px', color:'#ffffff', fontFamily: '"Times New Romans", Serif' }}
