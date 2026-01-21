@@ -4,8 +4,6 @@ import Project1 from './project1';
 import Project2 from './project2';
 import Project3 from './project3';
 import Project4 from './project4';
-import {useState}from 'react'
-import {useRef} from 'react'
 import { FaEnvelope, FaGithub, FaLinkedin , FaItchIo} from "react-icons/fa";
 //import Assets files
 import Headshot from './assets/Professional_Headshot_Yusong_Liang_croped.jpeg';

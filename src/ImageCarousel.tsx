@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
+type image={
+    url:string;
+    alt:string;
+}
 
-function ImageCarousel({images}:any){
+type imagelist={
+    images:image[];
+}
+
+function ImageCarousel({images}:imagelist){
     const [currentIndex, setCurrentIndex] =useState(0);
 
     function goToPreviousImage(){
@@ -22,30 +30,29 @@ function ImageCarousel({images}:any){
     return(
         <>
             <div className="ImageContainer">
-            {/*left arrow */}
-            <button onClick={goToPreviousImage}
-            className="left-arrow">
-            {FaAngleLeft ({size:32})}
-            </button>
+                {/*left arrow */}
+                <button onClick={goToPreviousImage}
+                className="left-arrow">
+                    {FaAngleLeft ({size:32})}
+                </button>
 
-            {/*images */}
-            <div>
-            <img
-                src={images[currentIndex].url}
-                alt={images[currentIndex].alt}
-                className="ProjectImages"
-            />
+                {/*images */}
+                <div>
+                    <img
+                        src={images[currentIndex].url}
+                        alt={images[currentIndex].alt}
+                        className="ProjectImages"
+                    />
+                </div>
+
+                {/*right arrow */}
+                <button onClick={goToNextImage}
+                className="right-arrow">
+                    {FaAngleRight ({size:32})}
+                </button>
+                {/*<img className= "ProjectImages" src={Project1Image1} alt="NutriQuestCover" />*/}
             </div>
-
-            {/*right arrow */}
-            <button onClick={goToNextImage}
-            className="right-arrow">
-            {FaAngleRight ({size:32})}
-            
-            </button>
-            {/*<img className= "ProjectImages" src={Project1Image1} alt="NutriQuestCover" />*/}
-        </div>
-        <p className="p2">Image {currentIndex+1} of {images.length}</p>
+        <p className="p2" style={{marginTop:'1.5rem'}}>Image {currentIndex+1} of {images.length}</p>
         </>
     );
 
