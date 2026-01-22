@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.1f39ca7b.css",
+    "main.js": "/react-gh-pages/static/js/main.f68df39e.js",
+    "static/media/NutriQuestSymposium.jpeg": "/react-gh-pages/static/media/NutriQuestSymposium.df8c8efcc894ad3370bc.jpeg",
+    "static/media/VRRoom.png": "/react-gh-pages/static/media/VRRoom.63c078ebb16b11ee8421.png",
+    "static/media/Professional_Headshot_Yusong_Liang_croped.jpeg": "/react-gh-pages/static/media/Professional_Headshot_Yusong_Liang_croped.9b0e9b88f8d4b916b07c.jpeg",
+    "static/media/buggingout.webp": "/react-gh-pages/static/media/buggingout.a9fe5b89e444424c8b0a.webp",
+    "static/media/NutriQuestPoster.png": "/react-gh-pages/static/media/NutriQuestPoster.4b9e00392df301afc585.png",
+    "static/media/Kitchen(cutting board)-UROP poster.png": "/react-gh-pages/static/media/Kitchen(cutting board)-UROP poster.b93db9fc79eb35f75ff2.png",
+    "static/media/ChefofTheForest.png": "/react-gh-pages/static/media/ChefofTheForest.36c7d3c556a9f71e3761.png",
+    "static/media/ChefOfTheForestPlaying.png": "/react-gh-pages/static/media/ChefOfTheForestPlaying.3b4ef2efaa45c02ba66b.png",
+    "static/media/Eating Scene-Poster.png": "/react-gh-pages/static/media/Eating Scene-Poster.5481ac5fec0df375890a.png",
+    "static/media/Prawemit_UIRoom1_5-1536x864.png": "/react-gh-pages/static/media/Prawemit_UIRoom1_5-1536x864.2973ad5c69bae9fcdff0.png",
+    "static/media/nutriquest.png": "/react-gh-pages/static/media/nutriquest.c21feea4a8a2f8f11ba9.png",
+    "static/media/healthy hero.png": "/react-gh-pages/static/media/healthy hero.6453594a84bd070c4866.png",
+    "static/media/SpiderSolCover.png": "/react-gh-pages/static/media/SpiderSolCover.acb15a62a1f7001ffc3e.png",
+    "static/media/SpiderSol1.png": "/react-gh-pages/static/media/SpiderSol1.4ca6c1c1e39495ef57e5.png",
+    "static/media/SpiderSol2.png": "/react-gh-pages/static/media/SpiderSol2.28d8f89cc58e669bff21.png",
+    "static/media/cookbook(poster).png": "/react-gh-pages/static/media/cookbook(poster).fd1739541d041643c70c.png",
+    "static/media/HorrorGameJamPhoto.jpg": "/react-gh-pages/static/media/HorrorGameJamPhoto.72ca6777e0a5b443b1af.jpg",
+    "static/media/PrawemitLevelExample.png": "/react-gh-pages/static/media/PrawemitLevelExample.19ae9e30523c054aa192.png",
+    "static/media/NutriQuest Play Action Map.png": "/react-gh-pages/static/media/NutriQuest Play Action Map.0b014a2b080e2ff16638.png",
+    "static/media/BeepskiResized.gif": "/react-gh-pages/static/media/BeepskiResized.5e032042b289f86561bb.gif",
+    "static/media/ResizedAxl.gif": "/react-gh-pages/static/media/ResizedAxl.9727915c63d9ea619799.gif",
+    "index.html": "/react-gh-pages/index.html",
+    "main.1f39ca7b.css.map": "/react-gh-pages/static/css/main.1f39ca7b.css.map",
+    "main.f68df39e.js.map": "/react-gh-pages/static/js/main.f68df39e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f39ca7b.css",
+    "static/js/main.f68df39e.js"
+  ]
+}
