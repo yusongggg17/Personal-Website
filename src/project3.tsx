@@ -22,7 +22,7 @@ const images=[
 function Project3(){
   return(
   <ProjectsTemplate 
-    title="Project 2 - SpiderSol" 
+    title="Project 3 - SpiderSol" 
     description="An 48-hours gamejam 2D game. "
     images={images}
     links={links} />

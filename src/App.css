@@ -116,14 +116,27 @@ h2{
 
 .project-grid{
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin: 0rem auto;
+  
+  /*display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0rem auto;
-  width:100%;
+  width:100%;*/
 }
 
 .project-card{
+  background-color: #FAEDCA;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 3px solid #b09345;
+  cursor: pointer;
+  text-align: center;
+  height: 450px; 
+  /*
   background-color: #FAEDCA;
   padding: 2rem;
   border-radius: 20px;
@@ -136,6 +149,8 @@ h2{
 
   cursor: pointer;
   transition: transform 0.3s ease;
+    */
+
 }
 
 .AppButtons{

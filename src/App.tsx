@@ -4,6 +4,7 @@ import Project1 from './project1';
 import Project2 from './project2';
 import Project3 from './project3';
 import Project4 from './project4';
+import Project1CoverImage from './assets/nutriquest.png'
 import { FaEnvelope, FaGithub, FaLinkedin , FaItchIo} from "react-icons/fa";
 //import Assets files
 import Headshot from './assets/Professional_Headshot_Yusong_Liang_croped.jpeg';
@@ -46,10 +47,10 @@ function Profile(){
 
 function Projects(){
   const ProjectList=[
-    {id:1,title:"Project 1", description:"1",link:"/Project1"},
-    {id:2,title:"Project 2", description:"2",link:"/Project2"},
-    {id:3,title:"Project 3", description:"3",link:"/Project3"},
-    {id:4,title:"Project 4", description:"4",link:"/Project4"}
+    {id:1,title:"Project 1", description:"1",link:"/Project1", src:Project1CoverImage},
+    {id:2,title:"Project 2", description:"2",link:"/Project2", src:Project1CoverImage},
+    {id:3,title:"Project 3", description:"3",link:"/Project3", src:Project1CoverImage},
+    {id:4,title:"Project 4", description:"4",link:"/Project4", src:Project1CoverImage}
   ]
   return(
     <div className= "DarkerSection">
@@ -62,6 +63,7 @@ function Projects(){
             onClick={()=>window.location.href=project.link}
           >
             <h3>{project.title}</h3>
+            <img src={project.src} alt="ProjectCoverImage" />
             <p>{project.description}</p>
           </div>
         ))}
