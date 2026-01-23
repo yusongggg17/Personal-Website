@@ -1,4 +1,5 @@
 import './App.css';
+import NavBar from './NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Project1 from './project1';
 import Project2 from './project2';
@@ -34,7 +35,7 @@ function FrontPage() {
 function Profile(){
   return(  
     <div className="LighterSection">
-      <h2 className="oval-bg" style={{color:'#8d6700'}}>About Me</h2>
+      <h2 className="oval-bg" style={{color:'#8d6700', marginTop:'2.5rem'}}>About Me</h2>
       <img className="profileImage" src={Headshot} alt="Headshot" />
       <p className="p1">
         My name is Yusong Liang,
@@ -47,7 +48,7 @@ function Profile(){
 
 function Projects(){
   const ProjectList=[
-    {id:1,title:"Project 1", description:"1",link:"/Project1", src:Project1CoverImage},
+    {id:1,title:"Project 1", description:"#Unity  #2D   #Indie Game",link:"/Project1", src:Project1CoverImage},
     {id:2,title:"Project 2", description:"2",link:"/Project2", src:Project1CoverImage},
     {id:3,title:"Project 3", description:"3",link:"/Project3", src:Project1CoverImage},
     {id:4,title:"Project 4", description:"4",link:"/Project4", src:Project1CoverImage}
@@ -63,7 +64,7 @@ function Projects(){
             onClick={()=>window.location.href=project.link}
           >
             <h3>{project.title}</h3>
-            <img src={project.src} alt="ProjectCoverImage" />
+            <img src={project.src} alt="ProjectCoverImage" style={{  width: '100%', objectFit: 'cover'}}/>
             <p>{project.description}</p>
           </div>
         ))}
@@ -75,7 +76,7 @@ function Projects(){
 function Contact(){
   return(
     <div className="LighterSection" id="contact-section">
-      <h2 className="oval-bg" style ={{color: '#8d6700'}}>Contact Me</h2>
+      <h2 className="oval-bg" style ={{color: '#8d6700', marginTop:'2.5rem'}}>Contact Me</h2>
         <p className="p1">Please feel free to contact me at any time. I look forward to working with you! </p>
       <div>
         <a 
@@ -122,12 +123,21 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            <FrontPage />
-            <Profile />
-            <Projects />
-            <div id="contact-section">
-              <Contact/>
-            </div>
+            <NavBar />
+            <section id="FrontPage">
+              <FrontPage />
+            </section>
+            <section id="Profile">
+              <Profile />
+            </section>
+            <section id="Projects">
+              <Projects />
+            </section>
+            <section id="Contact">
+              <div id="contact-section">
+                <Contact/>
+              </div>
+            </section>
           </>
         }/>
         <Route path="/project1" element={<Project1 />}/>

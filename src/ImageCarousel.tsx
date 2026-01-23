@@ -42,6 +42,7 @@ function ImageCarousel({images}:imagelist){
                         src={images[currentIndex].url}
                         alt={images[currentIndex].alt}
                         className="ProjectImages"
+                        key={currentIndex}
                     />
                 </div>
 

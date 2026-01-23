@@ -1,6 +1,6 @@
 import './App.css';
 import ProjectsTemplate from './ProjectsTemplate'
-import { FaItchIo} from "react-icons/fa";
+import {FaItchIo} from "react-icons/fa";
 import {CgWebsite} from "react-icons/cg"
 //imported files
 import Project1Image1 from './assets/nutriquest.png'
