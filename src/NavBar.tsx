@@ -7,15 +7,21 @@ import {Link} from 'react-router-dom';
 import { CiMenuBurger } from "react-icons/ci";
 
 function NavBar(){
+  function scrollToSection(id:string){
+    const sectionId=document.getElementById(id);
+    if(sectionId){
+      sectionId.scrollIntoView({behavior:'smooth'});
+    }
+  }
     return(
         <Navbar expand="lg" className="NavBar">
-        <Container>
-          <Navbar.Brand as={Link} to ="/">YL</Navbar.Brand>
-            <Nav>
-              <Nav.Link as={Link} to ="/">Home</Nav.Link>
-              <Nav.Link href="#Profile">About</Nav.Link>
-              <Nav.Link href="#Projects">Projects</Nav.Link>
-              <Nav.Link href="#Contact">Contact</Nav.Link>
+        <Container style={{position: 'relative', display: 'flex', justifyContent: 'space-between'}}>
+          <p className="NavBarBrand">YL</p>
+            <Nav style={{marginTop:'1.5rem'}}>
+              <Nav.Link as={Link} to ="/"  className="NavBarText">Home</Nav.Link>
+              <Nav.Link onClick={() => scrollToSection('Profile')}  className="NavBarText">About</Nav.Link>
+              <Nav.Link onClick={() => scrollToSection('Projects')} className="NavBarText">Projects</Nav.Link>
+              <Nav.Link onClick={() => scrollToSection('Contact')}  className="NavBarText">Contact</Nav.Link>
             </Nav>
         </Container>
       </Navbar>
