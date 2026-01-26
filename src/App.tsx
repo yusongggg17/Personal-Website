@@ -133,7 +133,6 @@ function Contact(){
 function App() {
   return (
     <HashRouter>
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={
             <>
@@ -159,7 +158,6 @@ function App() {
           <Route path="/project3" element={<Project3 />}/>
           <Route path="/project4" element={<Project4 />}/>
           </Routes>
-        </BrowserRouter>
       </HashRouter>
   );
 }
