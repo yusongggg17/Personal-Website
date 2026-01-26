@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Personal-Website/static/css/main.502577f0.css",
-    "main.js": "/Personal-Website/static/js/main.1b2805bc.js",
+    "main.js": "/Personal-Website/static/js/main.76bd8d1a.js",
     "static/media/NutriQuestSymposium.jpeg": "/Personal-Website/static/media/NutriQuestSymposium.df8c8efcc894ad3370bc.jpeg",
     "static/media/VRRoom.png": "/Personal-Website/static/media/VRRoom.63c078ebb16b11ee8421.png",
     "static/media/Professional_Headshot_Yusong_Liang_croped.jpeg": "/Personal-Website/static/media/Professional_Headshot_Yusong_Liang_croped.9b0e9b88f8d4b916b07c.jpeg",
@@ -26,10 +26,10 @@
     "static/media/ResizedAxl.gif": "/Personal-Website/static/media/ResizedAxl.9727915c63d9ea619799.gif",
     "index.html": "/Personal-Website/index.html",
     "main.502577f0.css.map": "/Personal-Website/static/css/main.502577f0.css.map",
-    "main.1b2805bc.js.map": "/Personal-Website/static/js/main.1b2805bc.js.map"
+    "main.76bd8d1a.js.map": "/Personal-Website/static/js/main.76bd8d1a.js.map"
   },
   "entrypoints": [
     "static/css/main.502577f0.css",
-    "static/js/main.1b2805bc.js"
+    "static/js/main.76bd8d1a.js"
   ]
 }
