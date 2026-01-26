@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './NavBar';
-import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 
 //import Assets files
 import Headshot from './assets/Professional_Headshot_Yusong_Liang_croped.jpeg';
@@ -60,6 +60,7 @@ function Profile(){
 }
 
 function Projects(){
+  const navigate=useNavigate();
   const ProjectList=[
     {id:1,title:"NutriQuest", description:"#Unity  #2D   #Indie Game",link:"/Project1", src:Project1CoverImage},
     {id:2,title:"Prawemit", description:"#Unity #2D  #Platformer  #Nintendo",link:"/Project2", src:Project2CoverImage},
@@ -74,7 +75,8 @@ function Projects(){
           <div 
             key={project.id}
             className="project-card"
-            onClick={()=>window.location.href=project.link}
+            //onClick={()=>window.location.href=project.link}
+            onClick={()=>navigate(project.link)}
           >
             <h2>{project.title}</h2>
             <img src={project.src} alt="ProjectCoverImage" style={{  width: '100%', objectFit: 'cover'}}/>
@@ -132,7 +134,7 @@ function Contact(){
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename='/Personal-Website'>
         <Routes>
           <Route path="/" element={
             <>
@@ -158,7 +160,7 @@ function App() {
           <Route path="/project3" element={<Project3 />}/>
           <Route path="/project4" element={<Project4 />}/>
           </Routes>
-      </HashRouter>
+      </BrowserRouter>
   );
 }
 
