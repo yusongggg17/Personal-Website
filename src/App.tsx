@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './NavBar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //import Assets files
 import Headshot from './assets/Professional_Headshot_Yusong_Liang_croped.jpeg';
@@ -132,33 +132,35 @@ function Contact(){
 
 function App() {
   return (
-    <BrowserRouter basename="/Personal-Website">
-      <Routes>
-        <Route path="/" element={
-          <>
-            <NavBar />
-            <section id="FrontPage">
-              <FrontPage />
-            </section>
-            <section id="Profile">
-              <Profile />
-            </section>
-            <section id="Projects">
-              <Projects />
-            </section>
-            <section id="Contact">
-              <div id="contact-section">
-                <Contact/>
-              </div>
-            </section>
-          </>
-        }/>
-        <Route path="/project1" element={<Project1 />}/>
-        <Route path="/project2" element={<Project2 />}/>
-        <Route path="/project3" element={<Project3 />}/>
-        <Route path="/project4" element={<Project4 />}/>
-        </Routes>
-      </BrowserRouter>
+    <HashRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <NavBar />
+              <section id="FrontPage">
+                <FrontPage />
+              </section>
+              <section id="Profile">
+                <Profile />
+              </section>
+              <section id="Projects">
+                <Projects />
+              </section>
+              <section id="Contact">
+                <div id="contact-section">
+                  <Contact/>
+                </div>
+              </section>
+            </>
+          }/>
+          <Route path="/project1" element={<Project1 />}/>
+          <Route path="/project2" element={<Project2 />}/>
+          <Route path="/project3" element={<Project3 />}/>
+          <Route path="/project4" element={<Project4 />}/>
+          </Routes>
+        </BrowserRouter>
+      </HashRouter>
   );
 }
 
