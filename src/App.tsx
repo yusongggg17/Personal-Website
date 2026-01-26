@@ -6,6 +6,10 @@ import Project2 from './project2';
 import Project3 from './project3';
 import Project4 from './project4';
 import Project1CoverImage from './assets/nutriquest.png'
+import Project2CoverImage from './assets/Prawemit_UIRoom1_5-1536x864.png'
+import Project3CoverImage from './assets/SpiderSolCover.png'
+import Project4CoverImage from './assets/AndMore.png'
+
 import { FaEnvelope, FaGithub, FaLinkedin , FaItchIo} from "react-icons/fa";
 //import Assets files
 import Headshot from './assets/Professional_Headshot_Yusong_Liang_croped.jpeg';
@@ -37,10 +41,11 @@ function Profile(){
     <div className="LighterSection">
       <h2 className="oval-bg" style={{color:'#8d6700', marginTop:'2.5rem'}}>About Me</h2>
       <img className="profileImage" src={Headshot} alt="Headshot" />
-      <p className="p1">
+      <p className="p1"style={{marginBottom:'5rem'}}>
         My name is Yusong Liang,
         I am a student at the Florida State University.
-        I am a Computer Science student.
+        I am a Computer Science and Cyber Criminology dual degreed student.
+        I like developing games and crocheting. I also enjoyed making this website!
       </p>
     </div>
   );
@@ -48,10 +53,10 @@ function Profile(){
 
 function Projects(){
   const ProjectList=[
-    {id:1,title:"Project 1", description:"#Unity  #2D   #Indie Game",link:"/Project1", src:Project1CoverImage},
-    {id:2,title:"Project 2", description:"2",link:"/Project2", src:Project1CoverImage},
-    {id:3,title:"Project 3", description:"3",link:"/Project3", src:Project1CoverImage},
-    {id:4,title:"Project 4", description:"4",link:"/Project4", src:Project1CoverImage}
+    {id:1,title:"NutriQuest", description:"#Unity  #2D   #Indie Game",link:"/Project1", src:Project1CoverImage},
+    {id:2,title:"Prawemit", description:"#Unity #2D  #Platformer  #Nintendo",link:"/Project2", src:Project2CoverImage},
+    {id:3,title:"SpiderSol", description:"#Unity #2D  #GameJam",link:"/Project3", src:Project3CoverImage},
+    {id:4,title:"Other Projects", description:"#Unity #VR #3D",link:"/Project4", src:Project4CoverImage}
   ]
   return(
     <div className= "DarkerSection">
@@ -63,9 +68,9 @@ function Projects(){
             className="project-card"
             onClick={()=>window.location.href=project.link}
           >
-            <h3>{project.title}</h3>
+            <h2>{project.title}</h2>
             <img src={project.src} alt="ProjectCoverImage" style={{  width: '100%', objectFit: 'cover'}}/>
-            <p>{project.description}</p>
+            <p className="p1" style={{marginTop:'1rem'}}>{project.description}</p>
           </div>
         ))}
         </div>

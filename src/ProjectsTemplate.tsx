@@ -2,6 +2,7 @@ import './App.css';
 import {useNavigate} from 'react-router-dom'
 import React, {useState} from 'react'
 import type { IconType } from "react-icons";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 import ImageCarousel from './ImageCarousel';
 
 type image={
@@ -31,8 +32,16 @@ function ProjectsTemplate({title,description,images,links}:ProjectsTemplateProps
           contactSection.scrollIntoView({behavior:'smooth'});
       }},100);
     }
+      
+    function jumptoHome(){
+      navigate('/');
+    }
 
     return(
+      <>
+        <button className="ProjectPageTopArrow" onClick={jumptoHome}>
+          {FaArrowAltCircleLeft({size:48})}
+        </button>
         <div className="ProjectPage">
           <h1 style={{marginTop:"50px"}}>{title}</h1>
           <div>
@@ -64,6 +73,7 @@ function ProjectsTemplate({title,description,images,links}:ProjectsTemplateProps
               Contact Me
           </button>
         </div>
+      </>
     );
 }
 export default ProjectsTemplate;

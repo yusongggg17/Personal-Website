@@ -60,7 +60,7 @@ h2{
   padding: 1rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 80vh;
+  min-height: 50vh;
   text-align: center
 }
 
@@ -263,5 +263,24 @@ h2{
 
 .NavBarText:hover{
   text-shadow: 2px 2px 3px #b09345;
+}
 
+.ProjectPageTopArrow{
+  margin-top:2rem;
+  margin-left:2rem;
+  font-size:'48px';
+  color:#FAEDCA;
+  cursor:"pointer";
+  display:'inline-block';
+  transition:'color 0.3s';
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border-radius:30%;
+  padding:0.3rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.ProjectPageTopArrow:hover{
+  transform:scale(1.1);
 }
