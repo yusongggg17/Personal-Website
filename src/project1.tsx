@@ -29,7 +29,12 @@ function Project1(){
   return(
   <ProjectsTemplate 
     title="Project 1-NutriQuest" 
-    description="A serious indie 2D game to promote mindful and intuitive eating."
+    description="A serious indie 2D game designed to promote mindful and intuitive eating.
+     I implemented this game in Unity as part of a research project under Ms. Chaewon Kim. 
+     Developed using the Unity 2D engine, the game simulates people's daily eating decisions,
+     including ingredient selection, dining location, and activities during meals. 
+     Through the creation of an immersive gaming environment, 
+     we aimed to better understand people's everyday eating habits and introduce the concept of intuitive and mindful eating."
     images={images}
     links={links} />
   )

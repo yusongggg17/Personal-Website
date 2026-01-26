@@ -21,7 +21,12 @@ function Project2(){
   return(
   <ProjectsTemplate 
     title="Project 2-Prawemit" 
-    description="An in-house 2D platformer game for Nintendo Switch platform."
+    description="An in-house 2D platformer developed for the Nintendo Switch. 
+    The game is a puzzle-platformer in the purest sense, 
+    allowing players to swap between characters, each with a distinct playstyle and unique abilities, 
+    to complete levels and uncover secrets. 
+    Through my work with Arcvale Studio on this project, 
+    I was able to apply my Unity 2D skills and gained valuable experience in the game development and debugging process."
     images={images}
     links={links} />
   )

@@ -23,7 +23,9 @@ function Project3(){
   return(
   <ProjectsTemplate 
     title="Project 3 - SpiderSol" 
-    description="An 48-hours gamejam 2D game. "
+    description="A 48-hour game jam 2D game created for the FSU DevLUp 2025 Horror Game Jam. 
+    I served as one of the programmers on the team, 
+    and we implemented the game in Unity to fit the theme “From Light to Darkness.”"
     images={images}
     links={links} />
   )

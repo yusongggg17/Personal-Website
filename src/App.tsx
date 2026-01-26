@@ -1,6 +1,9 @@
 import './App.css';
 import NavBar from './NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+//import Assets files
+import Headshot from './assets/Professional_Headshot_Yusong_Liang_croped.jpeg';
 import Project1 from './project1';
 import Project2 from './project2';
 import Project3 from './project3';
@@ -11,8 +14,7 @@ import Project3CoverImage from './assets/SpiderSolCover.png'
 import Project4CoverImage from './assets/AndMore.png'
 
 import { FaEnvelope, FaGithub, FaLinkedin , FaItchIo} from "react-icons/fa";
-//import Assets files
-import Headshot from './assets/Professional_Headshot_Yusong_Liang_croped.jpeg';
+
 
 function FrontPage() {
   function scrollToContact(){
@@ -41,12 +43,18 @@ function Profile(){
     <div className="LighterSection">
       <h2 className="oval-bg" style={{color:'#8d6700', marginTop:'2.5rem'}}>About Me</h2>
       <img className="profileImage" src={Headshot} alt="Headshot" />
-      <p className="p1"style={{marginBottom:'5rem'}}>
+      <p className="p1">
         My name is Yusong Liang,
         I am a student at the Florida State University.
         I am a Computer Science and Cyber Criminology dual degreed student.
-        I like developing games and crocheting. I also enjoyed making this website!
+        I like developing games and crocheting. I also really enjoyed making this website!
       </p>
+      <a href="/Yusong Liang Academic Resume_10_5_2025.pdf" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p2"
+        style={{marginBottom:'5rem'}}
+      >View my resume</a>
     </div>
   );
 }

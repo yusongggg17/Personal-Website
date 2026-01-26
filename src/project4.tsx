@@ -23,7 +23,9 @@ function Project4(){
   return(
   <ProjectsTemplate 
     title="Other Projects" 
-    description="Other personal projects, including 3D game jam projects and VR projects."
+    description="I also have many additional personal projects, 
+    including 3D game jam projects, VR experiences, 
+    and various course-related assignments. More projects are always in progress."
     images={images}
     links={links} />
   )
