@@ -132,7 +132,7 @@ function Contact(){
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Personal-Website">
       <Routes>
         <Route path="/" element={
           <>
